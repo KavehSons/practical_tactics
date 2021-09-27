@@ -14,8 +14,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }} -alG
-        run:
+      - run:
           ls | awk -F. '$1 != p { p=$1; print $1}'
-       run: |
+      - run: |
           ls -lG --color --group-directories-first -A -v
       - run: echo "🍏 This job's status is ${{ job.status }}."
