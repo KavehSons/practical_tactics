@@ -9,7 +9,6 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: actions/first-interaction@v1
         with:
