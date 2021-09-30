@@ -11,4 +11,5 @@ jobs:
     - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
     - name: List files in the repository
       run: |
-           ls ${{ github.workspace }} -la
+           cd ~
+           ls -la
