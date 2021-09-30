@@ -1,5 +1,15 @@
 name: browse directories 
-on: [push]
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: 'enter your name'
+        # Default value if no value is explicitly provided
+        default: 'سازمان'
+        # Input has to be provided for the workflow to run
+        required: true
 jobs:
   checkLis:
     runs-on: ubuntu-latest
