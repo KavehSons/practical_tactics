@@ -67,5 +67,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - run: |
-            cd /home/runner/work/
-            sudo tree -a 
+            cd ~
+            sudo tree -a -L 2
