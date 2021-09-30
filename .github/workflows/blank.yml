@@ -13,12 +13,12 @@ jobs:
       run: |
            echo root-------------
            cd /
-           #sudo tree -a
+
            ls -a
            
            echo home-----------
            cd ~
-           #ls -a
+
            sudo tree -a
            
            echo "work+++++++++++"
