@@ -45,7 +45,10 @@ jobs:
            uname -a
            hostname -I
            free -m
-           dpkg-query -l
+    - name: List files in the  workspace
+      run: |
+          ls ${{ github.workspace }}
+    - run: echo "🍏 This job's status is ${{ job.status }}."
 
 
 
