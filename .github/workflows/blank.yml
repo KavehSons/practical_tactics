@@ -14,7 +14,7 @@ jobs:
            echo root-------------
            cd /
 
-           ls -a
+           sudo tree -a -L 2
            
            echo home-----------
            cd ~
@@ -23,7 +23,7 @@ jobs:
            
            echo "work+++++++++++"
            cd work
-           sudo tree -a
+           
            cd -
            
            echo "runners+++++++++++"
@@ -31,5 +31,5 @@ jobs:
            ls -a
            echo  "workspace ff+"
            ls ${{ github.workspace }}
-           htop
+            
            
