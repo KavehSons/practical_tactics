@@ -1,7 +1,7 @@
 name: browse directories 
 on: [push]
 jobs:
-  label:
+  checkLis:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -13,23 +13,21 @@ jobs:
       run: |
            echo root-------------
            cd /
-
-          
+           ls -a          
            
            echo home-----------
            cd ~
-
-           sudo tree -a -L 2
+           ls -a           
            
            echo "work+++++++++++"
-           cd work
-           
+           cd /home/runner/work/
+           sudo tree -a 
            cd -
            
            echo "runners+++++++++++"
            cd runners
            ls -a
-           echo  "workspace ff+"
+           echo  "workspace +++++++++++++++"
            ls ${{ github.workspace }}
             
            
