@@ -37,11 +37,11 @@ jobs:
            echo "runners+++++++++++"
            cd runners
            ls -a
-           echo  "workspace +++++++++++++++"
-           ls ${{ github.workspace }}
+           echo  "++++++++++++++++linux command +++++++++++++++"
+            
            uname -a
            hostname 
-           man hier
+
            uname -a
            hostname -I
            free -m
