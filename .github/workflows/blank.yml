@@ -39,5 +39,19 @@ jobs:
            ls -a
            echo  "workspace +++++++++++++++"
            ls ${{ github.workspace }}
+           uname -a
+           hostname 
+           man hier
+           uname -a
+           hostname -I
+           free -m
+           dpkg-query -l
+
+
+
+
+
+
+
             
            
