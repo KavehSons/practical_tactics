@@ -29,9 +29,9 @@ jobs:
       - name: List files in the repository
         run: |
           cd ${{ github.workspace }} 
-          cd -
+          cd ..
           pwd
-          cd -
+          cd ..
           pwd
           tree -a
       - run: echo "🍏 This job's status is ${{ job.status }}."
