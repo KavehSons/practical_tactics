@@ -13,14 +13,19 @@ jobs:
       run: |
            echo root-------------
            cd /
+           ls -a
+           
            echo home-----------
            cd ~
            ls -a
-           echo work+++++++++++
+           
+           echo "work+++++++++++"
            cd work
            ls -a
-           echo  workspace 
-           ls ${{ github.workspace }}
            cd -
+           
+           echo "runners+++++++++++"
            cd runners
            ls -a
+           echo  "workspace ff+"
+           ls ${{ github.workspace }} -a
