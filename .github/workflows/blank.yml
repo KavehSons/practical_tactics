@@ -14,12 +14,12 @@ jobs:
            echo root-------------
            cd /
 
-           sudo tree -a -L 2
+          
            
            echo home-----------
            cd ~
 
-           sudo tree -a
+           sudo tree -a -L 2
            
            echo "work+++++++++++"
            cd work
