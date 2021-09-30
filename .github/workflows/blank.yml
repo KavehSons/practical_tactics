@@ -12,4 +12,9 @@ jobs:
     - name: List files in the repository
       run: |
            cd ~
-           ls -la
+           ls -a
+           cd work
+           ls -a
+           cd -
+           cd runners
+           ls -a
