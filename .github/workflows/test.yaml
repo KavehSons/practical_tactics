@@ -12,9 +12,7 @@ on:
         default: '-------'
         # Input has to be provided for the workflow to run
         required: false        
-    outputs:
-      results-file: # id of output
-        description: "Path to results file"
+
 
 jobs:
   job_1:
@@ -63,3 +61,11 @@ jobs:
         run: |
           value=`cat math-homework.txt`
           echo The result is $value
+  job_4:
+    name: broweslts
+    needs: job_3
+    runs-on: ubuntu-latest
+    steps:
+        - run: |
+            cd /home/runner/work/
+            sudo tree -a 
