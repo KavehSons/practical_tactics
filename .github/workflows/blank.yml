@@ -1,4 +1,4 @@
-name: Labeler
+name: browse directories 
 on: [push]
 jobs:
   label:
@@ -13,6 +13,7 @@ jobs:
       run: |
            echo root-------------
            cd /
+           sudo tree -a
            ls -a
            
            echo home-----------
@@ -28,4 +29,6 @@ jobs:
            cd runners
            ls -a
            echo  "workspace ff+"
-           ls ${{ github.workspace }} -a
+           ls ${{ github.workspace }}
+           htop
+           
