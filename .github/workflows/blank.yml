@@ -13,16 +13,17 @@ jobs:
       run: |
            echo root-------------
            cd /
-           sudo tree -a
+           #sudo tree -a
            ls -a
            
            echo home-----------
            cd ~
-           ls -a
+           #ls -a
+           sudo tree -a
            
            echo "work+++++++++++"
            cd work
-           ls -a
+           sudo tree -a
            cd -
            
            echo "runners+++++++++++"
