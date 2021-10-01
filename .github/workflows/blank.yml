@@ -48,7 +48,9 @@ jobs:
     - name: List files in the  workspace
       run: |
           ls ${{ github.workspace }}
-    - run: echo "🍏 This job's status is ${{ job.status }}."
+    - run: |    
+           echo "🍏 This job's status is ${{ job.status }}."
+           echo "GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}"
 
 
 
